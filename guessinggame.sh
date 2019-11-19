@@ -9,11 +9,11 @@ read input
 
 #checks if the number is -lt or -gt and asks for new inputs
 function check_number {
-	if [[ $input -lt $lines ]]
+	if [ $input -lt $lines ]
 	then
 		echo "Too low, try a bigger number:"
 		read input
-	elif [[ $input -gt $lines ]]
+	elif [ $input -gt $lines ]
 	then
 		echo "Too high, try a lower number:"
 		read input
@@ -21,7 +21,7 @@ function check_number {
 }
 
 #loops until input is correct
-while [[ $input -ne $lines ]]
+while [ $input -ne $lines ]
 do
 	check_number
 done
