@@ -13,7 +13,7 @@ function check_number {
 	then
 		echo "Too low, try a bigger number:"
 		read input
-	elif [[ $input -gt $count ]]
+	elif [[ $input -gt $lines ]]
 	then
 		echo "Too high, try a lower number:"
 		read input
